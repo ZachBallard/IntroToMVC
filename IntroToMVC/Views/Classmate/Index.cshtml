@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Classmate>
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>Classmate Information</h2>
+
+@foreach (var c in Model)
+{
+    <li>@c.Name, Hair Color: @c.HairColor, Height: @c.HeightFeet '@c.HeightInches"</li>
+}
